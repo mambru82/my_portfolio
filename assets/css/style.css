@@ -4,24 +4,46 @@
     box-sizing: border-box;
 }
 body {
-    color: #39a6b2;
+    color: gray;
     font-family: Helvetica, Arial, sans-serif;
   }
   /* apply the styles to the header */
-  header {
+   header {
       padding:20px 35px;
       background-color: black;
+      display: flex;
+      justify-content: space-between; /* Distributes the elements in the header with even spacing between the header and nav */
+      flex-wrap: wrap; /*lets the child elements break into the next line when they don't fit */
+      width: 100%;
   }
   
   header h1 {
       font-weight: bold;
       font-size: 36px;
-      color: #fce138;
+      color: white;
       margin:0;
-      display: inline;
+      width: 20%
   }
 
   header a {
       text-decoration: none; /*takes off the blue color and underline for the links*/
       color: #fce138;
+  }
+
+  header nav {
+      margin: 7px 0;
+  }
+
+  header nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /*aligns items on the x-axis when flex-direction is set to row*/
+      align-items: center; /*aligns items on the y or vertical axis (when flex-direction is row)*/
+      list-style: none;
+  }
+
+  header nav ul li a {
+      margin: 0 30px;
+      font-weight: lighter;
+      font-size: 1.55vw;
   }
