@@ -3,3 +3,25 @@
     padding:0;
     box-sizing: border-box;
 }
+body {
+    color: #39a6b2;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  /* apply the styles to the header */
+  header {
+      padding:20px 35px;
+      background-color: black;
+  }
+  
+  header h1 {
+      font-weight: bold;
+      font-size: 36px;
+      color: #fce138;
+      margin:0;
+      display: inline;
+  }
+
+  header a {
+      text-decoration: none; /*takes off the blue color and underline for the links*/
+      color: #fce138;
+  }
