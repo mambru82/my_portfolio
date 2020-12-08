@@ -27,7 +27,7 @@ body {
 
   header a {
       text-decoration: none; /*takes off the blue color and underline for the links*/
-      color: #fce138;
+      color: white;
   }
 
   header nav {
@@ -46,4 +46,13 @@ body {
       margin: 0 30px;
       font-weight: lighter;
       font-size: 1.55vw;
+  }
+
+.hero {
+    background-image: url("../images/bckgrnd.jpg");
+    background-size: cover; /*sets the size of the image so it won't get clipped */
+    background-position: center; /*centers the background image*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
