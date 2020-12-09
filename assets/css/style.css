@@ -15,6 +15,7 @@ body {
       justify-content: space-between; /* Distributes the elements in the header with even spacing between the header and nav */
       flex-wrap: wrap; /*lets the child elements break into the next line when they don't fit */
       width: 100%;
+      height: 10%;
   }
   
   header h1 {
@@ -22,7 +23,7 @@ body {
       font-size: 36px;
       color: white;
       margin:0;
-      width: 20%
+      width: 30%;
   }
 
   header a {
@@ -49,19 +50,25 @@ body {
   }
 
 .hero {
-    background-image: url("../images/bckgrnd.jpg");
+    background-image: url("../images/clara.jpg");
     background-size: cover; /*sets the size of the image so it won't get clipped */
     background-position: center; /*centers the background image*/
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     padding: 30 0;
+    height: 400px;
+    justify-content: first baseline;
+    width: 100%;
   }
 
+.hero-content {
+    background-color: ghostwhite;
+    text-align: right;
+    width: 15%;
+  }
 .content {
     background-color: gainsboro;
     color: black;
-    margin: 0 auto;
     font-family: Times;
     font-style: lighter;
 }
@@ -69,22 +76,24 @@ body {
 .section-wrapper {
     display: flex;
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .section-title {
-    justify: right;
-    width: 30%;
+    text-align: right;
+    width: 15%;
 }
 
 .section-title h2 {
-    size:32px;
+    size: 32px;
+    border-right: solid darkslategrey;
+    padding: 5px;
+    height: 100px;
 }
 
 .section-content {
-    justify: left;
-    width: 70%
+    text-align: left;
+    width: 85%;
+    padding: 5px;
 }
 
 .section-content p {
