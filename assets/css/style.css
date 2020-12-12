@@ -67,7 +67,7 @@ body {
 .content {
     background-color: gainsboro;
     color: black;
-    font-family: Times;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: lighter;
 }
 
@@ -80,14 +80,14 @@ body {
 .section-title {
     text-align: right;
     width: 15%;
-    align-items: center;
+    align-items: top;
 }
 
 .section-title h2 {
-    size: 32px;
+    font-size: 26px;
     border-right: solid darkslategrey;
-    padding: 5px;
     height: 200px;
+    padding-right: 5px;
 }
 
 .section-content {
@@ -96,8 +96,26 @@ body {
     padding: 5px;
 }
 
-.section-content p {
-    size: 16px;
+.section-content p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.section-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /*aligns items on the x-axis when flex-direction is set to row*/
+    align-items: center; /*aligns items on the y or vertical axis (when flex-direction is row)*/
+    list-style: none;
+}
+
+.section-content ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: courier;
+    font-size: 20px;
+
+
 }
 
 .grid-wrapper {
