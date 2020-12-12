@@ -99,3 +99,54 @@ body {
 .section-content p {
     size: 16px;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) ;
+    grid-template-rows: repeat(4, minmax(25px, auto)) ;
+}
+
+.grid-item-main {
+    width: 200px;
+    height: 100px;
+    border: solid;
+    color: black;
+    text-align: center;
+    justify-content: center;
+}
+/* SMALLER desktop screens */
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+}
+
+/* Tablets and smaller */
+
+@media screen and (max-width: 768px) {
+
+}
+
+/* mobile phones and smaller */
+
+@media screen and (max-width: 575px) {
+
+}
