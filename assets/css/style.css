@@ -72,7 +72,7 @@ body {
     flex-wrap: wrap;
     height: 400px;
     width: 100%;
-    padding: 360px 0 0 65%;
+    padding: 330px 0 0 55%;
   }
 
 .hero-content h2{
@@ -80,7 +80,7 @@ body {
     border-radius: 10px;
     padding: 5px;
     color: black;
-    position: relative;
+    width: 100%;
 }
 
 .content {
@@ -152,11 +152,10 @@ body {
     margin-left: 10px;
     width: 80%;
     display: grid;
-    /*
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) ;
-    grid-template-rows: repeat(4, minmax(25px, auto)) ;*/
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 300px);
+    grid-template-rows: repeat(4, minmax(25px, auto)) ;
+    /*grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 300px);*/
     align-content: center;
     justify-items: stretch; /*can also use place items (align and justify)*/
     color: black;
@@ -199,7 +198,7 @@ body {
     grid-row: 3 / span 1;
 }
 .grid-item h3, .grid-item p {
-    background-color: lightgray;
+    background-color: rgba(205, 207, 209, 0.8);
     text-align: left;
     padding: 5px;
     border: none;
@@ -249,13 +248,15 @@ body {
     }
 
     .hero {
-        padding: 0;
+        padding: 15% 0 0 0;
+        justify-content: center;
     }
 
     .hero-content h2 {
         font-size: 15px;
         text-align: center;
         justify-content: center;
+        margin-top: 85%;
     }
 
     .section-wrapper {
@@ -280,10 +281,39 @@ body {
         width: 100%;
         text-align: center;
         padding: 0;
+        justify-content: center;
     }
 
-    .grid-container {
-        grid-template-columns: 1fr;
+    .grid-wrapper {
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .grid-item.main {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        /*background-image: url("../images/bckgrnd.jpg");
+        background-size: cover; */
+    }
+    
+    .grid-item.two {
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+    }
+   
+    .grid-item.three {
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+    }
+    
+    .grid-item.four {
+        grid-column: 1 / span 1;
+        grid-row: 4 / span 1;
+    }
+    
+    .grid-item.five {
+        grid-column: 2 / span 1;
+        grid-row: 4 / span 1;
     }
 
 }
