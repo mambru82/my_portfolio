@@ -145,8 +145,7 @@ body {
 }
 .grid-wrapper {
     display: flex;
-    width: 100%;
-    justify-content: space-around;
+    width: 85%;
 }
 .grid-container {
     margin-left: 10px;
