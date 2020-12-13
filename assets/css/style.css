@@ -20,6 +20,7 @@ body {
       position: -webkit-sticky; /*for safari users */
       position: sticky;
       top: 0;
+      z-index: 9999;
   }
   
   header h1 {
@@ -62,7 +63,7 @@ body {
     text-shadow: none;
   }
   
-
+/* Hero section */
 .hero {
     background-image: url("../images/clara.jpg");
     background-size: cover; /*sets the size of the image so it won't get clipped */
@@ -82,7 +83,7 @@ body {
     color: black;
     width: 100%;
 }
-
+/* End of hero section */
 .content {
     background-color: gainsboro;
     color: black;
@@ -136,6 +137,12 @@ body {
     color: black;
     font-family: courier;
     font-size: 20px;
+    font-style: lighter;
+}
+
+.section-content ul li a:hover {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-style: none;
 }
 
 .section-content img {
@@ -148,11 +155,11 @@ body {
     width: 85%;
 }
 .grid-container {
-    margin-left: 10px;
-    width: 80%;
+    margin: 0 5px;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) ;
-    grid-template-rows: repeat(4, minmax(25px, auto)) ;
+    grid-template-rows: repeat(3, minmax(25px, auto)) ;
     /*grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 300px);*/
     align-content: center;
@@ -160,6 +167,7 @@ body {
     color: black;
     font-size: 1.2rem;
     grid-gap: 1%;
+    position: relative;
 }
 
 .grid-item {
@@ -168,6 +176,7 @@ body {
     justify-items: center;
     align-items: center;
     border-radius: 10px;
+    position: relative;
 }
 
 .grid-item.main {
@@ -212,6 +221,16 @@ body {
 .grid-item img {
     width: 100%;
     height: 100%;
+}
+
+.grid-item:hover::after {
+    content:"";
+    height: 100%;
+    width: 100%;
+    background: rgba(228, 178, 150, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .grid-container a {
@@ -265,16 +284,19 @@ body {
     }
 
     .section-title {
-        width: 100%;
+        width: 50%;
         text-align: center;
         padding: 0;
+        border-bottom: 2px solid;
+        padding-bottom: 10px;
+        margin: 0 auto 35px auto;
     }
 
     .section-title h2 {
-        text-decoration: underline;
         padding: 10px;
         margin: 0 auto;
         height: 100%;
+        border-right: none;
     }
 
     .section-content {
@@ -282,6 +304,11 @@ body {
         text-align: center;
         padding: 0;
         justify-content: center;
+        margin: 0 auto;
+    }
+
+    .section-content p{
+        margin: 0 4%;
     }
 
     .grid-wrapper {
@@ -321,11 +348,56 @@ body {
 /* Tablets and smaller */
 
 @media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 32px;
+
+    }
+
+    header nav ul li a {
+        font-size: 15px;
+    }
+
+    .section-title h2{
+        font-size: 22px;
+    }
+
+    .section-content p{
+        font-size: 15px;
+    }
+
+    .section-content a{
+        font-size: smaller;
+    }
+
+    .grid-item h3, .grid-item p {
+        font-size: smaller;
+    }
+
 
 }
 
 /* mobile phones and smaller */
 
 @media screen and (max-width: 575px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    header nav ul li a {
+        margin: 0 auto;
+        padding: 8px;
+    }
+
+    .section-content ul {
+        display: block;
+        line-height: 1.5;
+        justify-content: center;
+        text-align: left;
+        margin-left: 5%;
+    }
+
+    .section-content img {
+        justify-content: right;
+    }
 
 }
