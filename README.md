@@ -1,4 +1,4 @@
-# Week Two Challenge :  mambru82's workk portfolio
+# Week Two Challenge :  mambru82's work portfolio
 This is the web deployment of the Week 2 challenge for the Coding Bootcamp at UT Austin.
 
 [![Screenshot of the deployed web site][screenshot]][1]
@@ -34,4 +34,4 @@ The [website][1] is hosted by github
 - Images subject to copyright. May not be used or reproduced without express permission of Eduardo Castro. Please [contact me](mailto:ecastro82@gmail.com) if you wish to use any of these images.
 
 [1]: https://mambru82.github.io/my_portfolio/
-[screenshot]: ./assets/images/portfolio-screenshot.png
+[screenshot]: ./assets/images/portfolio_screenshot.png
