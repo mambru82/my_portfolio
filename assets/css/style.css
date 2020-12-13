@@ -84,6 +84,8 @@ body {
     width: 100%;
 }
 /* End of hero section */
+
+/*general content features */
 .content {
     background-color: gainsboro;
     color: black;
@@ -91,12 +93,16 @@ body {
     font-style: lighter;
 }
 
+/* end of content feature */
+
+/*larger flex box */
 .section-wrapper {
     display: flex;
     width: 100%;
     padding: 10px 0;
 }
 
+/*subdivision in flex-box, section title and section content */
 .section-title {
     text-align: right;
     width: 15%;
@@ -152,6 +158,7 @@ body {
     border: 1px solid black;
     border-radius: 10px;
 }
+ /* BEGINNING OF GRIDBOX */
 .grid-wrapper {
     display: flex;
     width: 85%;
@@ -225,7 +232,7 @@ body {
     height: 100%;
     border-radius: 5px;
 }
-
+/* adds change in color when hovering over a link */
 .grid-item:hover::after {
     content:"";
     height: 100%;
@@ -240,9 +247,11 @@ body {
     text-decoration: none;
     color: black;
 }
+
+/*code for making images part of background, blanked out for now
 .grid-item.other {
-  /*  background-image: url("../images/clara.jpg")*/
-}
+  /*  background-image: url("../images/clara.jpg")
+}*/
 
 
 /* SMALLER desktop screens */
@@ -322,8 +331,6 @@ body {
     .grid-item.main {
         grid-column: 1 / span 2;
         grid-row: 1 / span 2;
-        /*background-image: url("../images/bckgrnd.jpg");
-        background-size: cover; */
     }
     
     .grid-item.two {
