@@ -243,6 +243,7 @@ body {
     height: 100%;
     border-radius: 5px;
     object-fit: cover;
+    justify-content: center;
     
 }
 /* adds change in color when hovering over a link */
