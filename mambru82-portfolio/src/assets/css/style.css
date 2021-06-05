@@ -9,7 +9,7 @@ body {
   }
   /* apply the styles to the header */
    header {
-      background-image: url("../images/clara.jpg");
+      background-image: url("../images/bckgrnd.jpeg");
       background-size: cover; /*sets the size of the image so it won't get clipped */
       background-position: center; /*centers the background image*/
       background-attachment: fixed;
