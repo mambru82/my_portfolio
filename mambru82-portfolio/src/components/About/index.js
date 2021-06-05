@@ -15,7 +15,7 @@ function About() {
                     </p>
                 </div>
             </div>
-            {/* <img src={coverImage} className="my-2" style={{ width: "100%"}} alt = "karyotype" /> */}
+            <img src={coverImage} className="my-2" style={{ width: "100%"}} alt = "karyotype" />
         </section>
     )
 }
