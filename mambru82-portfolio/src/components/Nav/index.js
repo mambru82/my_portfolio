@@ -16,20 +16,18 @@ function Nav(props) {
 
     return (
        <header className="flex-row px-1">
-            <img src={personalPhoto} alt="portrait of Eduardo Castro"></img>
+            {/* <img src={personalPhoto} alt="portrait of Eduardo Castro"></img> */}
             <h1>
                  <a data-testid="link" href="./index.html">Eduardo Castro</a>
             </h1>
       <nav>
         <ul className="flex-row">
-            <li className="mx-2">
-                <a href="#about-me">About Me</a>
-            </li>
             {categories.map((category) => (
             <li  className={`mx-1 ${
                 currentCategory.name === category.name && 'navActive'}`} 
                 key={category.name} 
-                onClick={()=>setCurrentCategory(category)} >
+                onClick={()=>{
+                    setCurrentCategory(category)}} >
             
                 {capitalizeFirstLetter(category.name)}
             

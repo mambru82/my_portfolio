@@ -1,5 +1,4 @@
 import React from 'react'
-import portrait from '../../assets/images/CASTRO-ECHEVERRY.JPG'
 
 function Contact() {
     return (
@@ -9,7 +8,6 @@ function Contact() {
             <h2>Contact Me</h2>
           </div>
           <div class= "section-content">
-            <img src={portrait} alt="formal portrait of balding silly person"/>    
             <ul>
                <li>
                  <a href="tel:555.55.55">555.55.55</a>
